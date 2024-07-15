@@ -11,10 +11,10 @@
 
 <body>
   <header class="purple">
-    <div class="logo">
+    <a href="/aov/index.html" class="logo">
       <img src="./Images/logo.png" alt="" />
       <p>AOV TRAVELS & TOURS</p>
-    </div>
+    </a>
     <nav class="boldest">
       <ul>
         <li><a href="#">About</a></li>
@@ -32,7 +32,7 @@
 
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="./about.html">About</a></li>
           <li><a href="#">Destinations</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -67,7 +67,7 @@
     </div>
 
 
-    <h2 class="oneH2 boldest">Explore. Dream. Discover.</h2>
+    <h2  class="oneH2 boldest">Explore. Dream. Discover.</h2>
     <p class="bold">
       We craft personalized travel experiences tailored to your dreams.
       Whether you're seeking a serene escape to a hidden gem or an
@@ -241,14 +241,14 @@
         </div>
         <div class="TextArea">
           <label for="textarea">Your Message</label>
-          <textarea name="textarea" id="textarea" rows="13" placeholder="Type Here"></textarea>
+          <textarea name="textarea" id="textarea"  placeholder="Type Here"></textarea>
         </div>
         <button class="purple talkButton" type="submit">Send Message</button>
       </form>
     </div>
   </section>
 
-  <footer class="purpleBg ">
+  <footer   id="observe"  class="purpleBg ">
     <div class="footerOne">
       <div class="footerLogo">
         <img src="./Images/footerLogo.png" alt="" />
@@ -281,7 +281,7 @@
         </div>
       </div>
       <div class="footSocialsMobile">
-        <button>
+        <a target="_blank" href="https://www.instagram.com/aov.travelsandtours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-instagram">
@@ -289,15 +289,15 @@
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
           </svg>
-        </button>
+        </a>
 
-        <button>
+        <a target="_blank" href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-facebook">
             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
           </svg>
-        </button>
+        </a>
         <p>aov.travelsandtours</p>
       </div>
     </div>
@@ -305,8 +305,8 @@
       <p class="copyright">
         &#169; 2024 AOV Travels & Tours. All rights Reserved
       </p>
-      <div class="footSocials">
-        <button>
+      <div style="margin-right: 4rem;" class="footSocials">
+        <a target="_blank" href="https://www.instagram.com/aov.travelsandtours?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-instagram">
@@ -314,15 +314,15 @@
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
           </svg>
-        </button>
+        </a>
 
-        <button>
+        <a target="_blank" href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-facebook">
             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
           </svg>
-        </button>
+        </a>
         <p>aov.travelsandtours</p>
       </div>
     </div>
@@ -332,12 +332,15 @@
         <a href="https://wa.me/2347084037636">
           <img src="./Images/whatsappIcon.svg" alt=""></a>
       </li>
-      <li class="phoneIcon">
-        <button><img src="./Images/phoneIcon.svg" alt="">
-        </button>
+      <li  class="phoneIcon">
+        <a href="tel:+2347084037636"><img src="./Images/phoneIcon.svg" alt="">
+        </a>
       </li>
     </ul>
   </footer>
+  <button onclick="topFunction()" id="backToTop" title="Go to top">
+    <img src="./Images/backToTop.svg" alt="Back to Top" style="width: 20px; height: 20px;">
+</button>
 
   <script src="./script.js"></script>
 </body>

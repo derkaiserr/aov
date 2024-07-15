@@ -14,6 +14,10 @@
 .mitr {
   font-family: "Mitr";
 }
+
+button{
+  cursor: pointer;
+}
 header {
   display: flex;
   flex-direction: row;
@@ -34,6 +38,8 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
+
 }
 .logo img {
   width: 2.5rem;
@@ -47,6 +53,10 @@ nav ul {
   list-style: none;
   gap: 3rem;
   font-size: 20px;
+}
+
+nav ul li a:hover{
+  color: #dd5d0d;
 }
 
 .mobileMenu {
@@ -98,6 +108,7 @@ footer {
 }
 .oneImages {
   display: flex;
+  justify-content: center;
   padding: 1rem 0;
   gap: 2rem;
   width: 100%;
@@ -302,7 +313,7 @@ footer {
   width: 60vw;
   height: 32rem;
   background-color: #ffffffea;
-  padding: 2rem;
+  padding: 5%;
 }
 
 .contactForm h3 {
@@ -314,12 +325,16 @@ form {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
 form div {
-  width: 40%;
+  width: 45%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  justify-content:center;
 }
 form label {
   font-size: 14px;
@@ -354,6 +369,7 @@ textarea {
 .TextArea {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 footer {
@@ -387,6 +403,7 @@ footer nav ul a {
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .subFootTwo div {
@@ -394,10 +411,14 @@ footer nav ul a {
   align-items: center;
   gap: 5px;
 }
-.subFootTwo div button {
+.subFootTwo div a {
   background: none;
   color: #fff;
   cursor: pointer;
+}
+
+.subFootTwo a:hover{
+  color: #dd5d0d;
 }
 
 .footerOne > div > div {
@@ -410,9 +431,34 @@ footer nav ul a {
 .footSocialsMobile {
   display: none;
 }
+
+#backToTop {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 40px; /* Place the button at the bottom */
+  right: 60px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #dd5d0d; /* Dark background color */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  padding: 15px 16px;
+   /* Some padding */
+  border-radius: 40px; /* Rounded corners */
+  align-items: center;
+  
+}
+
+#backToTop:hover {
+  background-color: #dd5d0da5; /* Darker background on hover */
+}
+
+
 @media screen and (max-width: 768px) {
   .menuIcon {
     display: block;
+    cursor: pointer;
   }
 
   nav:nth-child(2) {
@@ -444,9 +490,10 @@ footer nav ul a {
   .mobileMenu {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     /* font-size: 2.3rem; */
-    padding: 0;
+    /* padding: 0; */
+    /* margin-bottom: 20vh; */
   }
   .mobileMenu > div > ul > li > a {
     display: flex;
@@ -475,7 +522,7 @@ footer nav ul a {
   }
 
   .one {
-    margin-top: -100vh;
+    margin-top: -110vh;
     transition: all 0.3s ease;
     align-items: start;
   }
@@ -484,6 +531,7 @@ footer nav ul a {
     width: 100%;
     text-align: center;
     font-size: 250%;
+    margin-top: 20vh;
   }
 
   .mobileMenu div h5 {
@@ -622,8 +670,9 @@ footer nav ul a {
 
   .footSocialsMobile {
     display: flex;
+    align-items: center;
   }
-  .footSocialsMobile button {
+  .footSocialsMobile a {
     background: none;
     color: white;
   }
@@ -636,23 +685,33 @@ footer nav ul a {
     position: fixed;
     z-index: 5;
     bottom: 1rem;
-    right: 1rem;
+    right: 0rem;
     list-style-type: none;
   }
 
   .contactIcons button, .contactIcons img{
     background: none;
-    width: 7rem;
+    width: 6rem;
   }
 
-  .phoneIcon button{
+  .phoneIcon a{
     background-color: #2a166d;
     border-radius: 45px;
     padding: 1rem;
-    width: fit-content;
+    /* width: fit-content; */
+    display: flex;
+    align-items: center;
     
   }
   .phoneIcon img{
-    width: 3rem;
+    width: 2rem;
   }
+
+
+  #backToTop{
+    left: 30px;
+    right: inherit;
+  }
+
 }
+
