@@ -30,19 +30,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";
       }
-  });
-}, {
-  threshold: 0.5 // Trigger when 50% of the element is in view
-});
+    });
+  },
+  {
+    threshold: 0.5, // Trigger when 50% of the element is in view
+  }
+);
 
 observer.observe(phoneIcon);

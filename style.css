@@ -15,7 +15,7 @@
   font-family: "Mitr";
 }
 
-button{
+button {
   cursor: pointer;
 }
 header {
@@ -39,7 +39,6 @@ header {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-
 }
 .logo img {
   width: 2.5rem;
@@ -55,7 +54,7 @@ nav ul {
   font-size: 20px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #dd5d0d;
 }
 
@@ -71,6 +70,7 @@ li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0;
 }
 
 .purple {
@@ -333,8 +333,8 @@ form div {
   height: max-content;
   display: flex;
   flex-direction: column;
-  align-items: ;
-  justify-content:center;
+
+  justify-content: center;
 }
 form label {
   font-size: 14px;
@@ -417,7 +417,7 @@ footer nav ul a {
   cursor: pointer;
 }
 
-.subFootTwo a:hover{
+.subFootTwo a:hover {
   color: #dd5d0d;
 }
 
@@ -444,16 +444,179 @@ footer nav ul a {
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   padding: 15px 16px;
-   /* Some padding */
+  /* Some padding */
   border-radius: 40px; /* Rounded corners */
   align-items: center;
-  
 }
 
 #backToTop:hover {
   background-color: #dd5d0da5; /* Darker background on hover */
 }
 
+/*  ABOUT.HTML */
+
+.aboutTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  margin-top: -0.5rem;
+}
+
+.aboutTwo h1 {
+  font-size: 175%;
+  padding: 0;
+  width: 100%;
+}
+
+.aboutTwo p {
+  width: fit-content;
+}
+
+.aboutThree {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+
+.aboutThree div {
+  width: 40%;
+}
+
+.aboutThree h5 {
+  font-size: 3rem;
+}
+
+.mission::before {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  background-color: #2a166d;
+  content: " ";
+  display: block;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.aboutThree h6 {
+}
+
+.aboutFour {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 40vw;
+  margin: 1rem 7%;
+}
+.aboutFour h5 {
+  width: auto;
+  font-size: 3rem;
+}
+
+.aboutFour h5::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #2a166d;
+  translate: 14rem 2.6rem;
+}
+
+
+
+  /* Destinations.html */
+
+  .destTwo img{
+    width: 100%;
+  }
+
+
+
+
+
+
+
+  /* Contact.html */
+  .contactTwo{
+    width: 100%;
+    background-color: #2a166d;
+    /* margin-top: 4.7rem; */
+    position: relative;
+  }
+  
+  .contactTwo img{
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .contactTwo div{
+    position: absolute;
+    color: #fff;
+    top: 15%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactTwo div h4{
+    font-size: 5vw;
+    font-family: "Lalezar";
+  }
+  .contactTwo div p{
+    font-size: 1.3vw;
+    margin-top: -1rem;
+  }
+
+
+  #subject{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px #bdbdbd solid;
+  }
+  option{
+    cursor: pointer;
+  }
+
+
+
+  .contactFour {
+    width: 100%;
+    padding:  0 7%;
+  }
+  
+  .map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+
+  .followUs div img{
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .followUs div img:hover{
+    transform: scale(1.2);
+  }
+  
 
 @media screen and (max-width: 768px) {
   .menuIcon {
@@ -485,6 +648,7 @@ footer nav ul a {
     background-color: white;
     /* width: 100vw; */
     position: sticky;
+
   }
 
   .mobileMenu {
@@ -492,7 +656,8 @@ footer nav ul a {
     width: 100%;
     height: 90vh;
     /* font-size: 2.3rem; */
-    /* padding: 0; */
+    padding: 7%;
+    background-color: #dd5d0d;
     /* margin-bottom: 20vh; */
   }
   .mobileMenu > div > ul > li > a {
@@ -522,16 +687,18 @@ footer nav ul a {
   }
 
   .one {
-    margin-top: -110vh;
-    transition: all 0.3s ease;
+    margin-top: -90vh;
+    transition: all 1s ease;
     align-items: start;
+    background-color: #2a166d;
+    height: fit-content;
   }
 
   .one h2 {
     width: 100%;
     text-align: center;
     font-size: 250%;
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 
   .mobileMenu div h5 {
@@ -630,7 +797,7 @@ footer nav ul a {
   }
 
   .contactForm {
-    width: auto;
+    width: 100%;
     height: auto;
     padding-bottom: 0;
   }
@@ -656,6 +823,8 @@ footer nav ul a {
 
   footer {
     padding-bottom: 0.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .subFootTwo > div {
     display: none;
@@ -689,29 +858,148 @@ footer nav ul a {
     list-style-type: none;
   }
 
-  .contactIcons button, .contactIcons img{
+  .contactIcons button,
+  .contactIcons img {
     background: none;
     width: 6rem;
   }
 
-  .phoneIcon a{
+  .phoneIcon a {
     background-color: #2a166d;
     border-radius: 45px;
     padding: 1rem;
     /* width: fit-content; */
     display: flex;
     align-items: center;
-    
   }
-  .phoneIcon img{
+  .phoneIcon img {
     width: 2rem;
   }
 
-
-  #backToTop{
+  #backToTop {
     left: 30px;
     right: inherit;
   }
 
-}
+  /* About.html mobile */
 
+
+  .aboutOne{
+    width: fit-content;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* display: none; */
+  }
+  .aboutOne img{
+    margin: 0;
+  }
+
+  .aboutTwo {
+    flex-direction: column;
+    
+  }
+  .aboutTwo h1 {
+    margin-bottom: 1rem;
+  }
+
+  .aboutThree {
+    flex-direction: column;
+    align-items: normal;
+    gap: 4rem;
+  }
+
+  .aboutThree div {
+    width: 100%;
+  }
+
+  .mission::before {
+    margin-bottom: 0;
+  }
+
+  .aboutFour {
+    width: 80%;
+    padding-top: 2rem;
+  }
+  .aboutFour h5::before {
+    transform: translate(-14rem, -3rem);
+  }
+
+
+
+  /* Destination.html */
+
+  .destTwo img{
+    width: 100%;
+    padding: 0 7% 7%;
+  }
+
+  .destFive{
+    padding: 7%;
+  }
+  .grey{
+    display: block;
+    padding: 10% 7% 0;
+
+    border-radius: 10px;
+  }
+  .grey p{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Contact.html */
+
+  .contactTwo{
+    width: 100%;
+    background-color: #2a166d;
+    /* margin-top: 4.7rem; */
+  }
+  
+  .contactTwo img{
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .contactTwo div{
+    background-color: #fff;
+    padding: 5%;
+  }
+
+  .threeOne{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .followUs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .followUs div{
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+
+
+  .contact-form{
+    margin: 1rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contactFour {
+    padding:  0 5%;
+  }
+
+
+
+  
+
+
+}

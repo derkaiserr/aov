@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon" />
     <title>About - AOV Travels and Tours</title>
   </head>
-  <body>
+  <body class="contactBody">
     <header class="purple">
       <a href="index.html" class="logo">
         <img src="./Images/logo.png" alt="" />
@@ -15,9 +15,9 @@
       </a>
       <nav class="boldest">
         <ul>
-          <li><a style="color: #dd5d0d" href="#">About</a></li>
+          <li><a href="./about.html">About</a></li>
           <li><a href="./destinations.html">Destinations</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a style="color: #dd5d0d" href="#">Contact</a></li>
         </ul>
       </nav>
       <img class="menuIcon" src="./Images/menuIcon.svg" alt="" />
@@ -26,9 +26,9 @@
       <div class="mobileMenu">
         <nav>
           <ul>
-            <li><a style="color: #dd5d0d" href="#">About</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="./destinations.html">Destinations</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
 
@@ -57,100 +57,139 @@
         </div>
       </div>
     </section>
-    <section class="aboutOne">
-      <img
-        style="width: 100%;"
-        src="./Images/aboutImages/oneImage.png"
-        alt=""
-      />
-    </section>
-
-    <section class="aboutTwo purpleBg sectionMargin">
-      <h1 class="bolder">Discover the world with us</h1>
-      <p>
-        We believe that travel is more than just visiting new places—it's about
-        creating lasting memories, experiencing diverse cultures, and exploring
-        the wonders of the world. Founded by passionate travelers, our agency
-        was born out of a desire to share the joy of discovery and adventure
-        with others.
-      </p>
-    </section>
-
-    <section class="aboutThree sectionMargin mitr">
-      <div class="mission">
-        <h5 class="purple lalezar">Our Mission</h5>
-        <p>
-          To craft personalized travel experiences that cater to your unique
-          interests and preferences. Whether you're seeking a relaxing beach
-          retreat, a thrilling adventure, or an immersive cultural journey, we
-          are dedicated to making your travel dreams a reality.
-        </p>
-        <img
-          style="width: 100%"
-          src="./Images/aboutImages/missionImage.png"
-          alt=""
-        />
-      </div>
+    <section class="contactTwo">
+      <img src="./Images/contactImages/contactTwo.png" alt="" />
       <div>
-        <h5 class="purple lalezar">Our Values</h5>
-        <br />
-        <h6 class="purple lalezar h3Size">Customer Focus</h6>
-        <p>
-          We place our customers at the heart of everything we do. Your
-          satisfaction and happiness are our ultimate goals, and we strive to
-          exceed your expectations at every turn.
-        </p>
-        <br /><br />
-        <h6 class="purple lalezar h3Size">Integrity</h6>
-        <p>
-          We believe in conducting our business with honesty, transparency, and
-          integrity. You can trust us to provide accurate information, fair
-          pricing, and reliable services.
-        </p>
+        <h4 class="boldest">Contact us</h4>
+        <p class="mitr">We’re Here to Make Your Travel Dreams Come True</p>
       </div>
     </section>
 
-    <div class="aboutFour">
-      <h5 class="purple lalezar">Our Team</h5>
-      <p>
-        Our team is made up of passionate travel enthusiasts who bring a wealth
-        of knowledge and expertise to the table. From seasoned globetrotters to
-        local destination specialists, each member of our team is dedicated to
-        ensuring your travel experience is seamless and unforgettable.
-      </p>
-    </div>
+    <section class="sectionThree">
+      <section class="subContactThree threeOne">
+        <div>
+          <h4 class="boldest purple">Office Hours</h4>
+          <p>Monday to Friday: 9:00 AM - 5:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+        </div>
 
-    <section class="six">
-      <div class="contactForm">
-        <h3 class="boldest purple">Request a call back</h3>
-        <form action="">
+        <div class="followUs">
+          <h4 class="boldest purple">Follow Us</h4>
           <div>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter full name"
-              required
-            />
-            <label for="phoneNumber">Phone Number</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              placeholder="Enter phone number"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter email address"
-              required
-            />
+            <a href=""
+              ><img src="./Images/contactImages/contactInstagram.png" alt=""
+            /></a>
+            <a href=""
+              ><img src="./Images/contactImages/contactFacebook.png" alt=""
+            /></a>
           </div>
-          <div class="TextArea">
+        </div>
+      </section>
+
+      <section class="subContactThree threeTwo">
+        <div class="contact-form">
+          <h3 class="boldest purple">Send Us a Message</h3>
+          <p>
+            We aim to respond to all inquiries within 24 hours. Please fill out
+            the form below with your details and message, and a member of our
+            team will get back to you shortly.
+          </p>
+
+          <form action="">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter full name"
+                required
+              />
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter phone number"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+                required
+              />
+              <label for="subject">Subject</label>
+              <select name="Subject" id="subject">
+                <option value="">--Select Subject--</option>
+                <option value="Business Visa Procurement Services">
+                  Business Visa Procurement Services
+                </option>
+                <option value="Haji Pilgrimage operations">
+                  Haji Pilgrimage operations
+                </option>
+                <option value="Jerusalem Pilgrimage Operations">
+                  Jerusalem Pilgrimage Operations
+                </option>
+                <option value="Flight Scheduling & Reservation Services">
+                  Flight Scheduling & Reservation Services
+                </option>
+                <option
+                  value="Ticketing, procurement & processing of Overseas Student Admission"
+                >
+                  Ticketing, procurement & processing of Overseas Student
+                  Admission
+                </option>
+                <option value="Immigration Consultancy Services">
+                  Immigration Consultancy Services
+                </option>
+                <option
+                  value="Travel & Tours Services, Holidays & Vacation Services."
+                >
+                  Travel & Tours Services, Holidays & Vacation Services.
+                </option>
+                <option
+                  value="Corporate, Business, Workshops, Seminars & Groups Travel"
+                >
+                  Corporate, Business, Workshops, Seminars & Groups Travel
+                </option>
+                <option value="Pacific & Atlantic Ocean Cruises.">
+                  Pacific & Atlantic Ocean Cruises.
+                </option>
+                <option value="Caribbean & Mediterranean Sea Cruises">
+                  Caribbean & Mediterranean Sea Cruises
+                </option>
+                <option value="All-Inclusive Resort Stays">
+                  All-Inclusive Resort Stays
+                </option>
+                <option value="Car Rental Services">Car Rental Services</option>
+                <option
+                  value="Safari Packages in Africa & Asia (Airfare included)"
+                >
+                  Safari Packages in Africa & Asia (Airfare included)
+                </option>
+                <option
+                  value="Destination Weddings & Honeymoons (Airfare Included)"
+                >
+                  Destination Weddings & Honeymoons (Airfare Included)
+                </option>
+                <option
+                  value="European Vacations to Italy, France & Germany (Airfare Included)"
+                >
+                  European Vacations to Italy, France & Germany (Airfare
+                  Included)
+                </option>
+                <option
+                  value="Latin American Vacations to Mexico, Cuba & Argentina (Airfare Included)"
+                >
+                  Latin American Vacations to Mexico, Cuba & Argentina (Airfare
+                  Included)
+                </option>
+              </select>
+            </div>
+            <!-- <div class="TextArea"> -->
             <label for="textarea">Your Message</label>
             <textarea
               name="textarea"
@@ -158,9 +197,23 @@
               rows="15"
               placeholder="Type Here"
             ></textarea>
-          </div>
-          <button class="purple talkButton" type="submit">Send Message</button>
-        </form>
+            <!-- </div> -->
+            <button class="purple talkButton" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <section class="contactFour">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21437.809617458875!2d3.3888820625133262!3d6.452331226243884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b4d78f639df%3A0xe61df66c10d975d3!2sAov%20Travels%20And%20Tour!5e0!3m2!1sen!2sng!4v1721347256854!5m2!1sen!2sng"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
