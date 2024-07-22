@@ -587,7 +587,7 @@ footer nav ul a {
     padding: 3% 7%;
     /* align-items:flex-start; */
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .threeOne{
@@ -653,7 +653,7 @@ footer nav ul a {
   }
 
   .threeTwo{
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
 
     padding: 3rem 5%;
   }
@@ -662,13 +662,14 @@ footer nav ul a {
   .threeTwo form{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 
   }
 
   
   .threeTwo .talkButton{
-    /* float: inline-start;   */
+    margin-left: auto;
+    margin-right: auto;
   }
  
 
@@ -1061,39 +1062,80 @@ footer nav ul a {
   
   .contactTwo img{
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 130px;
   }
 
   .contactTwo div{
     background-color: #fff;
-    padding: 5%;
+    padding: 5% 5% 0;
     /* position: relative; */
     bottom: 0;
     left: 0;
     top: auto;
     width: 100%;
     color: #2a166d;
-    
+    align-items: flex-start;
   }
 
   .contactTwo div h4{
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .contactTwo div p{
     font-size: 1rem;
     margin-top: 0rem;
+    color: black;
+  }
+  .contactThree{
+    padding: 5%;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .contactThree h4{
+    /* font-size: 2rem; */
+    font-family: "Lalezar";
   }
   .threeOne{
-    padding: 0 5%;
+    padding: 0 ;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .threeTwo{
+    box-shadow:none;
+    padding:  0;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .assistance p{
+    display: none;
+  }
+
+  .assistance{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .assistance .contactIcons{
+    position: fixed;
+    visibility: visible;
+
+  }
+
+  .threeTwo .contact-form{
+    margin: 0;
+  }
+  .threeTwo textarea{
+    min-height: 30vh;
   }
 
   .followUs{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    
   }
 
   .followUs div{
@@ -1110,8 +1152,12 @@ footer nav ul a {
     gap: 0.5rem;
   }
 
+  .we-aim{
+    width: 100%;
+  }
+
   .contactFour {
-    padding:  0 5%;
+    padding:  3rem 5%;
   }
 
 
