@@ -4,7 +4,17 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
+}
+
+
+body{
+  
+  font-family: "Mitr";
+}
+
+.inter{
   font-family: "Inter";
+
 }
 
 .lalezar {
@@ -317,9 +327,9 @@ footer {
   align-items: center;
   gap: 2rem;
   width: 60vw;
-  height: 32rem;
+  height: 100%;
   background-color: #ffffffea;
-  padding: 5%;
+  padding: 4% 3% 2%;
 }
 
 .contactForm h3 {
@@ -329,10 +339,16 @@ footer {
 }
 form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+
   gap: 1rem;
 }
+.six #email{
+  margin: 0;
+}
+
+
 
 form div {
   width: 45%;
@@ -365,6 +381,10 @@ form button, .grey .talkButton {
   height: 3rem;
   font-weight: 600;
 }
+.six .talkButton{
+  margin-left: auto;
+  margin-right: auto;
+}
 textarea {
   padding: 1rem;
   outline: 0;
@@ -387,11 +407,33 @@ textarea {
 footer {
   display: flex;
   flex-direction: column;
+  font-family: "Mitr";
 }
 .footerOne {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
+
+}
+.footerLogo img{
+  width: 4rem;
+}
+
+.footerLogo a{
+  color: #fff;
+  text-decoration: none;
+  font-family: "Inter";
+  width: fit-content;
+  
+}
+#logoP{
+  font-size: 12px;
 }
 
 footer nav ul {
@@ -760,13 +802,13 @@ footer nav ul a {
     padding: 3rem 5%;
   }
 
-
   .threeTwo form{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
   }
+
 
   
   .threeTwo .talkButton{
@@ -889,12 +931,30 @@ footer nav ul a {
     padding-inline-start: 0;
     padding-top: 1rem;
   }
-
+  
+  .mobileMenu div h5 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+  }
   .one p {
     width: 100%;
     font-weight: 500;
     word-spacing: 1.5px;
     letter-spacing: 0.06rem;
+  }
+
+  .oneImages{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .polaroid{
+    /* width: 100%; */
+  }
+  .polaroid img{
+    width: 100%;
   }
 
   .one {
@@ -912,21 +972,13 @@ footer nav ul a {
     margin-top: 5vh;
   }
 
-  .mobileMenu div h5 {
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 1.8px;
-  }
-  /* .purpleB{
-    background-color:#2a166d;
-  } */
+ 
 
   .sectionMargin {
     padding: 2rem;
   }
 
   .two {
-    /* margin-top: 50rem; */
     flex-wrap: wrap;
   }
 
@@ -1319,7 +1371,7 @@ footer nav ul a {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .contactThree{
     flex-wrap: wrap;
   }
