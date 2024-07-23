@@ -159,6 +159,9 @@ footer {
   padding: 0.7rem 2rem;
 }
 
+.talkButton:hover{
+  background-color: #be510df5;
+}
 .two ul {
   list-style: none;
   line-height: 25px;
@@ -281,6 +284,9 @@ footer {
   margin: 5rem 0 0;
   padding: 5rem 6rem;
 }
+.grey .talkButton:hover{
+  background-color: #be510df5;
+}
 
 .navigateButtons {
   display: flex;
@@ -352,7 +358,7 @@ form input {
   border-radius: 5px;
 }
 
-form button {
+form button, .grey .talkButton {
   background-color: #dd5d0d;
   width: 20rem;
   border-radius: 5px;
@@ -541,15 +547,110 @@ footer nav ul a {
 
   .destTwo img{
     width: 100%;
+    height: 91vh;
+  }
+
+  .destThree{
+    display: flex;
+    padding: 3% 7%;
+    justify-content: space-between;
+    gap: 10vw;
+    flex-wrap: wrap;
+    
+  }
+  .destThree div{
+    flex: 1;
+    min-width: 20rem;
+  }
+  .destThree div h4{
+    font-size: 4rem;
+    line-height: 80px;
+  }
+  .destThree p{
+    font-family: "Mitr";
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .destFour{
+    padding: 3% 7%;
+  }
+
+  .destFour .images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 1400px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .destFour .images div{
+    /* flex: 1;
+    
+    min-width: 275px;
+    max-width: 275px;
+    height: 160px; */
+    width: 263px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .america{
+    background-image: url(./Images/destinationImages/destinations/America.png);
+  }
+
+  .canada{
+    background-image: url(./Images/destinationImages/destinations/Canada.png);
+  }
+  .UK{
+    background-image: url(./Images/destinationImages/destinations/UK.png);
+  }
+  .europe{
+    background-image: url(./Images/destinationImages/destinations/Europe.png);
+  }
+  .kenya{
+    background-image: url(./Images/destinationImages/destinations/Kenya.png);
+  }
+  .SA{
+    background-image: url(./Images/destinationImages/destinations/SA.png);
+  }
+  .qatar{
+    background-image: url(./Images/destinationImages/destinations/Qatar.png);
+  }
+  .dubai{
+    background-image: url(./Images/destinationImages/destinations/Dubai.png);
   }
 
 
+  .destFive{
+    padding: 0 7% 3%;
+  }
 
+  .destFive .grey{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+  }
 
+ 
 
 
 
   /* Contact.html */
+
   .contactTwo{
     width: 100%;
     background-color: #2a166d;
@@ -560,12 +661,13 @@ footer nav ul a {
   .contactTwo img{
     width: 100%;
     padding-bottom: 1rem;
+    height: 91vh;
   }
 
   .contactTwo div{
     position: absolute;
     color: #fff;
-    top: 15%;
+    top: 11%;
     left: 7%;
     display: flex;
     flex-direction: column;
@@ -578,7 +680,7 @@ footer nav ul a {
   }
   .contactTwo div p{
     font-size: 1.3vw;
-    margin-top: -1rem;
+    margin-top: -5%;
   }
 
   .contactThree{
@@ -679,16 +781,21 @@ footer nav ul a {
   }
 
   #subject{
-    padding: 1rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
     border: 1px #bdbdbd solid;
+    
   }
+
+
 
 
   option{
     cursor: pointer;
   }
 
+ 
+  
 
   .contactFour {
     width: 100%;
@@ -1029,15 +1136,58 @@ footer nav ul a {
     transform: translate(-14rem, -3rem);
   }
 
+  form button, .grey .talkButton{
+    width: 70vw;
+    height: 4vh;
+    font-size: 100%;
 
+    box-sizing: content-box;
+  }
 
   /* Destination.html */
 
   .destTwo img{
     width: 100%;
-    padding: 0 7% 7%;
+    height: auto;
+    padding: 0 5% 7%;
   }
 
+  .destThree{
+    width: 100%;
+    padding: 2rem 5%;
+    display: block;
+  }
+  .destThree div{
+    display: block;
+    flex: none;
+    min-width:auto;
+  }
+
+  .destThree div h4{
+    font-size: 200%;
+    width: 100%;
+  }
+
+  .destFour .images{
+    flex-direction: column;
+  }
+
+  .destFour .images div{
+    width: 100%;
+    /* /* min-width: auto; */
+    max-width: auto;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    height: 50vw;
+    justify-content: center;
+    border-radius: 5px;
+    flex: auto;
+    width: 100%; 
+
+
+  }
   .destFive{
     padding: 7%;
   }
@@ -1063,6 +1213,7 @@ footer nav ul a {
   .contactTwo img{
     width: 100%;
     padding-bottom: 130px;
+    height: auto;
   }
 
   .contactTwo div{
