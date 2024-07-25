@@ -118,11 +118,14 @@ footer {
 }
 .oneImages {
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem 0;
   gap: 2rem;
   width: 100%;
   overflow-x: scroll;
+  /* display: inline; */
 }
 
 .oneImages::-webkit-scrollbar {
@@ -132,6 +135,7 @@ footer {
   /* background: #fff;
     padding: 0.5rem 0.5rem 1rem;
     transform: rotateX('30deg'); */
+    width: fit-content;
 }
 .polaroid img {
   width: 20rem;
