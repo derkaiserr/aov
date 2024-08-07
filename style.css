@@ -348,7 +348,7 @@ footer {
 }
 form {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 
   gap: 1rem;
@@ -517,6 +517,9 @@ footer nav ul a {
 }
 
 /*  ABOUT.HTML */
+.aboutOne img{
+  height: 91vh;
+}
 
 .aboutTwo {
   display: flex;
@@ -1181,6 +1184,7 @@ footer nav ul a {
   }
   .aboutOne img{
     margin: 0;
+    height: 100%;
   }
 
   .aboutTwo {
